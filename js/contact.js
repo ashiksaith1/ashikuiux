@@ -11,21 +11,22 @@ function emailSend() {
         "<br/> Subject :" + subject +
         "<br/> Message :" + message;
     Email.send({
-        SecureToken: '790ca9b9-7c86-4d56-adf4-9a341c53422b',
+        SecureToken: '0efabb16-d234-4219-ad02-ec40dbb146d3',
         Host: "smtp.elasticemail.com",
-        Username: "athnanabubacker007@gmail.com",
-        Password: "91209B10BDBF4B5968EA85F66E1D8B593382",
-        To: 'athnanabubacker007@gmail.com',
-        From: "athnanabubacker007@gmail.com",
-        Subject: "This is the subject",
+        Username: "ashiksaith007@gmail.com",
+        Password: "6369E968B981515800DD070DEA8EDB22BBA5",
+        To: 'ashiksaith007@gmail.com',
+        From: "ashiksaith007@gmail.com",
+        Subject: "New contact from Portfolio",
         Body: messageBody
     }).then(
         message => {
             if (message == 'OK') {
-                swal("Secussful", "You clicked the button!", "success");
+                swal("Successfull", "You clicked the button!", "success");
             } else {
                 swal("Error", "You clicked the button!", "error");
             }
         }
     );
 }
+
